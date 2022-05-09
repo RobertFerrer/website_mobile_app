@@ -25,6 +25,32 @@ $(document).ready(function() {
             }
         }
     });
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if (this.scrollY > 20) {
+                $('.navbar').addClass("sticky");
+            } else {
+                $('.navbar').removeClass("sticky");
+            }
+            if (this.scrollY > 500) {
+                $('.scroll-up-btn').addClass("show");
+            } else {
+                $('.scroll-up-btn').removeClass("show");
+            }
+        });
+        $('.scroll-up-btn').click(function() {
+            $('html').animate({ scrollTop: 0 });
+        });
+
+
+        var typed = new Typed(".typing", {
+            strings: ["Developer", "Freelancer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        })
+
+    });
     /*------carousel features---*/
     $('.features-carousel').owlCarousel({
         loop: true,
@@ -58,10 +84,10 @@ $(document).ready(function() {
                 items: 1,
             },
             600: {
-                items: 3,
+                items: 2,
             },
             1000: {
-                items: 4,
+                items: 3,
             }
         }
     });
@@ -109,30 +135,5 @@ $(document).ready(function() {
     $(".nav-link").on("click", function() {
         $(".navbar-collapse").collapse("hide");
     });
-    /*------Toggle theme light and dark------*/
-    function toggleTheme() {
-        updateIcon();
-    }
-    toggleTheme();
-
-    $(".toggle-theme").on("click", function() {
-        $("body").toggleClass("dark")
-        if ($("body").hasClass("dark")) {
-            localStorage.setItem("shala-theme", "dark");
-        } else {
-            localStorage.setItem("shala-theme", "light");
-        }
-        updateIcon();
-    });
-
-    function updateIcon() {
-        if ($("body").hasClass("dark")) {
-            $("toggle-theme i").removeClass("fa-moon");
-            $("toggle-theme i").addClass("fa-sun");
-        } else {
-            $("toggle-theme i").removeClass("fa-sun");
-            $("toggle-theme i").addClass("fa-moon");
-        }
-    }
 
 });

@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Robert Ferrer">
     <meta name="keywords" content="Robert Ferrer, Systems, developer, web, websites, applications, app, java, ui/ux, designer, marketing, freelancer">
-    <meta name="description" content="Robert Ferrer, I'm web developer, app developer, marketing, UI/UX designer, freelancer">
-    <meta name="copyright" content="© 2022 Robert Ferrer | Systems Developer" />
+    <meta name="description" content="Robert Ferrer, I'm web developer, marketing, UI/UX designer, freelancer">
+    <meta name="copyright" content="© 2022 Robert Ferrer Systems Developer" />
     <meta name="robots" content="index, follow">
     <meta name="rating" content="general" />
-    <link rel="icon" class="logo2" href="img/logomini.png">
+    <link rel="icon" class="logo2" href="files/logomini.png">
+    <!--icon link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <!-- owl carousel css -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- font awesome icons -->
@@ -31,14 +34,14 @@
     </div>
     <!--Preloader end-->
     <!--navbar start-->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" data-scroll-index="0">
         <div class="container">
             <!-- Brand -->
             <a class="navbar-brand logo-text" href="#home">
-                <img class="logo" src="img/logo.png" alt="Robert Ferrer">
+                <img class="logo" src="files/logo.png" alt="Robert Ferrer">
             </a>
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler text-secondary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
        <i class="fas fa-bars"></i>
       </button>
 
@@ -46,449 +49,314 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item">
-                        <a class="nav-link active" data-scroll-nav="0" href="#">HOME</a>
+                        <a class="nav-link active text-secondary" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="1" href="#">FEATURES</a>
+                        <a class="nav-link text-secondary" data-scroll-nav="1" href="#">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="2" href="#">SCREENSHOTS</a>
+                        <a class="nav-link text-secondary" data-scroll-nav="2" href="#">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="4" href="#">TESTIMONIALS</a>
+                        <a class="nav-link text-secondary" data-scroll-nav="3" href="#">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="5" href="#">PRICING</a>
+                        <a class="nav-link text-secondary" data-scroll-nav="4" href="#">SOCIAL</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="6" href="#">CONTACT</a>
+                        <a class="nav-link text-secondary" data-scroll-nav="5" href="#">QUESTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" data-scroll-nav="6" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item nav-link-invisivle">
+                        <a class="nav-link text-secondary"></a>
                     </li>
                 </ul>
+                <div class="social-links ms-auto text-center">
+                    <a href="https://www.linkedin.com/in/robertferrerdev/"><i class="bi bi-linkedin text-secondary"></i></a>
+                    <a href="https://github.com/RobertFerrer"><i class="bi bi-github text-secondary"></i></a>
+                    <a href="https://www.instagram.com/ferrerrobertdev/"><i class="bi bi-instagram text-secondary"></i></a>
+                    <a href="mailto:robertferrerdev@outlook.com"><i class="bi bi-envelope-fill text-secondary"></i></a>
+                </div>
             </div>
         </div>
     </nav>
-    <!--navbar end-->
-    <!--home start-->
-    <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
-        <div class="effect-wrap">
-            <i class="fas fa-plus effect effect-1"></i>
-            <i class="fas fa-plus effect effect-2"></i>
-            <i class="fas fa-circle-notch effect effect-3"></i>
-        </div>
+    <!--home-->
+    <div class="hero home" id="home">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-7">
-                    <div class="home-text">
-                        <h1>Best Mobile App template for your Business</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quod pariatur libero. Blanditiis ratione eaque obcaecati aliquid soluta perspiciatis non!</p>
-                        <div class="home-btn">
-                            <a href="#" data-scroll-goto="3" class="btn btn-1">download app</a>
-                            <button type="button" class="btn btn-3 video-play-btn"><i class="fas fa-play"></i></button>
-                        </div>
+            <div class="row">
+                <div class="col-md-11 text-left" data-aos="fade-up" data-aos-delay="400">
+                    <br> <br> <br> <br> <br> <br> <br> <br>
+                    <h5 class="display-1">Hi, my name is</h5>
+                    <h2 class="display-1"><span class="text-white">ROBERT FERRER</span></h2>
+                    <h2 class="display-1"><span class="text-white">I'm</span></h2>
+                    <h2 class="display-1 "><span class="typing"></span></h2>
+                    <br><br>
+                    <div class="home-btn">
+                        <a href="#" data-scroll-nav="3" class="btn btn-1">See my portfolio</a>
+                        <button type="button" class="btn btn-3 video-play-btn"><i class="fas fa-play"></i></button>
+                        <br> <br>
                     </div>
                 </div>
-                <div class="col-md-5 text-center">
-                    <div class="home-img">
-                        <div class="circle"></div>
-                        <img src="img/phone.png" alt="shala app">
+                <div class="col-md-1 text-center">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--home Section end-->
+    <!-- about me start -->
+    <section id="about" class="about section-padding bg-light" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>About<span> Me</span></h2>
                     </div>
+                </div>
+                <div class="col-lg-6">
+                    <article>
+                        <div class="intro mb-4">
+                            <h1 class="display-4"><strong>A little bit...</strong></h1>
+                        </div>
+                        <p class="text-about text-justify">Have you ever had that desire to drop everything and change careers? Yes, I left my job after almost 10 years as a manager at one of the largest banks in the world and started doing what I love in 2021, and what I always did in
+                            my spare time, and I graduated in <em>systems developer</em>.</p>
+                        <p class="text-justify text-about">Nowadays I develop websites with interfaces intended for mobile users with user friendly designer. I can be anywhere in the world, I work remotely.</p>
+                    </article>
+                    <a href="files/resume.pdf" class="btn btn-2">My resume</a>
+                    <br><br>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="intro mb-4">
+                        <h1 class="display-4 col-lg-12 text-center"><strong>Robert Ferrer</strong></h1>
+                    </div>
+                    <figure class="col-lg-12 ">
+                        <img src="./img/robertferrer.jpg" alt="Robert Ferrer">
+                    </figure>
                 </div>
             </div>
         </div>
     </section>
-    <!--home Section end-->
-    <!--features section start-->
-    <section class="features section-padding" id="features" data-scroll-index="1">
+    <!--about me end-->
+    <!--services section start-->
+    <section class="features section-padding" id="services" data-scroll-index="2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title">
-                        <h2>awesome<span> features</span></h2>
+                        <h2>My<span> Services</span></h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="owl-carousel features-carousel">
                     <div class="feature-item">
-                        <div class="icon"><i class="fas fa-code"></i></div>
-                        <h3>Clean Code</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fuga fugit debitis accusamus? Dolorem, dicta?</p>
+                        <div class="icon"><i class="bi bi-bullseye"></i></div>
+                        <h3>Marketing</h3>
+                        <p>work with one of the most used tools in the world, Google ADS, is a great tool for advertising on the internet very quickly that generates great results.</p>
                     </div>
                     <div class="feature-item">
-                        <div class="icon"><i class="fas fa-edit"></i></div>
-                        <h3>Auto install system</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fuga fugit debitis accusamus? Dolorem, dicta?</p>
+                        <div class="icon"><i class="bi bi-pencil-square"></i></div>
+                        <h3>Freelancer</h3>
+                        <p>What your company needs, can be in person or remotely, or by the hour or work contract provided with a fixed term. What does your company need?</p>
                     </div>
                     <div class="feature-item">
-                        <div class="icon"><i class="fas fa-paint-brush"></i></div>
-                        <h3>Pixel perfect design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fuga fugit debitis accusamus? Dolorem, dicta?</p>
+                        <div class="icon"><i class="bi bi-code-slash"></i></div>
+                        <h3>Web Development</h3>
+                        <p>I create interactive and engaging websites with animated graphics based on HTML5, CSS3, JavaScript and WIX that can be displayed on.</p>
                     </div>
                     <div class="feature-item">
-                        <div class="icon"><i class="fas fa-check"></i></div>
-                        <h3>Fast download app</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fuga fugit debitis accusamus? Dolorem, dicta?</p>
+                        <div class="icon"><i class="bi bi-display"></i></div>
+                        <h3>UI/UX Designer</h3>
+                        <p> Modern and simple designer, where each project is unique thinking about every detail, being 100% customized for the company.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--features Section end-->
-    <!--fun facts Section start-->
-    <section class="fun-facts section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 text-center">
-                    <div class="home-img">
-                        <img src="img/phone.png" alt="shala app">
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="section-title">
-                        <h2>fun<span> facts</span></h2>
-                    </div>
-                    <div class="fun-facts-text text-justify">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At corrupti reprehenderit perferendis mollitia, tempore in? Quam illo ab, dicta rerum error veniam, itaque deserunt odit nulla animi recusandae mollitia nobis.</p>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-1">
-                                        <h3>4000</h3>
-                                        <span class="text-white">downloads</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-2">
-                                        <h3>200</h3>
-                                        <span class="text-white">likes</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-3">
-                                        <h3>500</h3>
-                                        <span class="text-white">5 start rating</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-4">
-                                        <h3>150</h3>
-                                        <span class="text-white">awards</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--fun facts Section end-->
-    <!--Screenshots Section start-->
-    <section class="app-screenshots section-padding" id="screenshots" data-scroll-index="2">
+    <!--services Section end-->
+    <!--portfolio Section start-->
+    <section class="app-screenshots section-padding" data-scroll-index="3" id="portfolio">
         <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title">
-                        <h2>app<span> screenshots</span></h2>
+                        <h2>My<span class="text-white"> portfolio</span></h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="owl-carousel screenshot-carousel">
-                    <div class="screenshot-item">
-                        <img src="img/phone.png" alt="screenshot">
+                    <div class="portfolio-item">
+                        <a href="img/w1.jpg"><img src="img/w1.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
                     </div>
-                    <div class="screenshot-item">
-                        <img src="img/phone.png" alt="screenshot">
+                    <div class="portfolio-item ">
+                        <a href="img/w2.jpg"><img src="img/w2.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
                     </div>
-                    <div class="screenshot-item">
-                        <img src="img/phone.png" alt="screenshot">
+                    <div class="portfolio-item ">
+                        <a href="img/w3.jpg"><img src="img/w3.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
                     </div>
-                    <div class="screenshot-item">
-                        <img src="img/phone.png" alt="screenshot">
+                    <div class="portfolio-item ">
+                        <a href="img/w4.jpg"><img src="img/w4.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
                     </div>
-                    <div class="screenshot-item">
-                        <img src="img/phone.png" alt="screenshot">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="owl-carousel screenshot-carousel ">
+                    <div class="portfolio-item">
+                        <a href="img/w1.jpg"><img src="img/w1.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
+                    </div>
+                    <div class="portfolio-item ">
+                        <a href="img/w2.jpg"><img src="img/w2.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
+                    </div>
+                    <div class="portfolio-item ">
+                        <a href="img/w3.jpg"><img src="img/w3.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
+                    </div>
+                    <div class="portfolio-item ">
+                        <a href="img/w4.jpg"><img src="img/w4.jpg " class="w-100 img-thumbnail " alt="portfolio item "></a>
+                        <h3 class="text-capitalize text-white fs-5 my-2 ">Team selection</h3>
+                        <p class="mb-4 "><a href="# " class="text-white text-decoration-none ">Live demo</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Screenshots Section end-->
-    <!--App download Section start-->
-    <section class="app-download section-padding" data-scroll-index="3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h2>Download<span> app</span></h2>
+    <!--portfolio Section end-->
+    <!--hire me Section start-->
+    <section class="app-download section-padding" id="hire">
+        <div class="container ">
+            <div class="row justify-content-center ">
+                <div class="col-lg-8 ">
+                    <div class="text-center">
+                        <h2 class="text-white"><strong>Let's Work</strong><span class="text-info"> <strong>together</strong></span></h2>
                     </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="app-download-item">
-                        <i class="fab fa-google-play"></i>
-                        <h3>google play</h3>
-                        <p>Lorem ipsum dolor sit amet, adipisicing elit. em olit. em optio perspiciatis!</p>
-                        <a href="#" class="btn btn-2">download now</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="app-download-item">
-                        <i class="fab fa-apple"></i>
-                        <h3>apple store</h3>
-                        <p>Lorem ipsum dolor sit amet, adipisicing elit. em olit. em optio perspiciatis!</p>
-                        <a href="#" class="btn btn-2">download now</a>
+                    <div class="home-btn text-center">
+                        <br>
+                        <a href="#" data-scroll-nav="6" class="btn btn-1">Contact Me</a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <!--App download Section end-->
-
+    <!--hire me Section end-->
+    <!--Social end-->
+    <section class="testimonials section-padding" data-scroll-index="4" id="social ">
+        <div class="container-lg ">
+            <div class="row justify-content-center ">
+                <div class="col-lg-8 ">
+                    <div class="section-title ">
+                        <h2>What<span> They</span> say</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="owl-carousel testimonials-carousel ">
+                    <div class="testimonials-item ">
+                        <div class="img-box ">
+                            <img src="img/client1.jpg ">
+                            <i class="fas fa-quote-right "></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
+                        <h3>Paul Gerrad</h3>
+                        <span>UI/UX Designer</span>
+                        <div class="rating ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                        </div>
+                    </div>
+                    <div class="testimonials-item ">
+                        <div class="img-box ">
+                            <img src="img/client2.jpg ">
+                            <i class="fas fa-quote-right "></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
+                        <h3>Paul Gerrad</h3>
+                        <span>UI/UX Designer</span>
+                        <div class="rating ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                        </div>
+                    </div>
+                    <div class="testimonials-item ">
+                        <div class="img-box ">
+                            <img src="img/client3.jpg ">
+                            <i class="fas fa-quote-right "></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
+                        <h3>Paul Gerrad</h3>
+                        <span>UI/UX Designer</span>
+                        <div class="rating ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                        </div>
+                    </div>
+                    <div class="testimonials-item ">
+                        <div class="img-box ">
+                            <img src="img/client4.jpg ">
+                            <i class="fas fa-quote-right "></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
+                        <h3>Paul Gerrad</h3>
+                        <span>UI/UX Designer</span>
+                        <div class="rating ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-lg-8 ">
+                    <div class="section-title ">
+                        <br> <br> <br>
+                        <h2>Recent <span>Instagram</span> posts</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="py-0 w-100 row bg-light" id="insta-posts">
+                <figure class="col">
+                    <a href="https://www.instagram.com/ferrerrobertdev/"> <img alt="robert ferrer instagram " class="img-networks" src="img/w1.jpg"></a>
+                </figure>
+                <figure class="col">
+                    <a href="https://www.instagram.com/ferrerrobertdev/"> <img alt="robert ferrer instagram" class="img-networks" src="img/w2.jpg"></a>
+                </figure>
+                <a href="https://www.instagram.com/ferrerrobertdev/" class="insta-follow">
+                    <i class="bi2 bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
     <!--Testimonials end-->
-    <section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
-        <div class="container-lg">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h2>What Our<span> Client</span> say</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonials-item">
-                        <div class="img-box">
-                            <img src="img/client1.jpg">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
-                        <h3>Paul Gerrad</h3>
-                        <span>UI/UX Designer</span>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="img-box">
-                            <img src="img/client2.jpg">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
-                        <h3>Paul Gerrad</h3>
-                        <span>UI/UX Designer</span>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="img-box">
-                            <img src="img/client3.jpg">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
-                        <h3>Paul Gerrad</h3>
-                        <span>UI/UX Designer</span>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="img-box">
-                            <img src="img/client4.jpg">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio ad earum.</p>
-                        <h3>Paul Gerrad</h3>
-                        <span>UI/UX Designer</span>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Testimonials end-->
-    <!--pricing start-->
-    <div class="pricing section-padding" id="pricing" data-scroll-index="5">
-        <div class="container-lg">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h2>pricing <span>plan</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="pricing-card">
-                        <div class="pricing-plan">
-                            <div class="pricing-header">
-                                <h3>basic</h3>
-                            </div>
-                            <div class="pricing-price">
-                                <span class="currency">$</span>
-                                <span class="price">99</span>
-                                <span class="period">/monthly</span>
-                            </div>
-                            <div class="pricing-body">
-                                <ul>
-                                    <li><i class="fas fa-check"></i> 5 GB Bandwidth</li>
-                                    <li><i class="fas fa-check"></i> Free Update</li>
-                                    <li><i class="fas fa-check"></i> High Regulation Printing</li>
-                                    <li><i class="fas fa-check"></i> Bandwidth</li>
-                                    <li><i class="fas fa-check"></i> Another Great Features</li>
-                                </ul>
-                            </div>
-                            <div class="pricing-footer">
-                                <a href="#" class="btn btn-2">get started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-card">
-                        <div class="pricing-plan">
-                            <div class="pricing-header">
-                                <h3>premium</h3>
-                            </div>
-                            <div class="pricing-price">
-                                <span class="currency">$</span>
-                                <span class="price">149</span>
-                                <span class="period">/monthly</span>
-                            </div>
-                            <div class="pricing-body">
-                                <ul>
-                                    <li><i class="fas fa-check"></i> 5 GB Bandwidth</li>
-                                    <li><i class="fas fa-check"></i> Free Update</li>
-                                    <li><i class="fas fa-check"></i> High Regulation Printing</li>
-                                    <li><i class="fas fa-check"></i> Bandwidth</li>
-                                    <li><i class="fas fa-check"></i> Another Great Features</li>
-                                </ul>
-                            </div>
-                            <div class="pricing-footer">
-                                <a href="#" class="btn btn-2">get started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-card">
-                        <div class="pricing-plan">
-                            <div class="pricing-header">
-                                <h3>ultimate</h3>
-                            </div>
-                            <div class="pricing-price">
-                                <span class="currency">$</span>
-                                <span class="price">199</span>
-                                <span class="period">/monthly</span>
-                            </div>
-                            <div class="pricing-body">
-                                <ul>
-                                    <li><i class="fas fa-check"></i> 5 GB Bandwidth</li>
-                                    <li><i class="fas fa-check"></i> Free Update</li>
-                                    <li><i class="fas fa-check"></i> High Regulation Printing</li>
-                                    <li><i class="fas fa-check"></i> Bandwidth</li>
-                                    <li><i class="fas fa-check"></i> Another Great Features</li>
-                                </ul>
-                            </div>
-                            <div class="pricing-footer">
-                                <a href="#" class="btn btn-2">get started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <!--pricing section end-->
-        <!--Team section start-->
-        <section class="team section-padding">
-            <div class="container-lg">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title">
-                            <h2>team <span>member</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="owl-carousel testimonials-carousel">
-                        <div class="team-item">
-                            <img src="img/client1.jpg" alt="team">
-                            <h3>Ana Bernardi</h3>
-                            <span>UI designer</span>
-                        </div>
-                        <div class="team-item">
-                            <img src="img/client2.jpg" alt="team">
-                            <h3 class="team-name">Ana Bernardi</h3>
-                            <span>UI designer</span>
-                        </div>
-                        <div class="team-item">
-                            <img src="img/client3.jpg" alt="team">
-                            <h3>Ana Bernardi</h3>
-                            <span>UI designer</span>
-                        </div>
-                        <div class="team-item">
-                            <img src="img/client4.jpg" alt="team">
-                            <h3>Ana Bernardi</h3>
-                            <span>UI designer</span>
-                        </div>
-                        <div class="team-item">
-                            <img src="img/client2.jpg" alt="team">
-                            <h3>Ana Bernardi</h3>
-                            <span>UI designer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-carousel team-carousel">
-                    <div class="team-item">
-                        <img src="img/team/1.jpg" alt="team">
-                        <h3>Ana Bernardi</h3>
-                        <span>UI designer</span>
-                    </div>
-                    <div class="team-item">
-                        <img src="img/team/2.jpg" alt="team">
-                        <h3>Ana Bernardi</h3>
-                        <span>UI designer</span>
-                    </div>
-                    <div class="team-item">
-                        <img src="img/team/3.jpg" alt="team">
-                        <h3>Ana Bernardi</h3>
-                        <span>UI designer</span>
-                    </div>
-                    <div class="team-item">
-                        <img src="img/team/4.jpg" alt="team">
-                        <h3>Ana Bernardi</h3>
-                        <span>UI designer</span>
-                    </div>
-                    <div class="team-item">
-                        <img src="img/team/5.jpg" alt="team">
-                        <h3>Ana Bernardi</h3>
-                        <span>UI designer</span>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </section>
-    <!--Team section end-->
     <!--Faq Section start-->
-    <section class="faq section-padding">
+    <section class="faq section-padding" data-scroll-index="5">
         <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -502,49 +370,43 @@
                     <div id="accordion">
                         <div class="accordion-item">
                             <div class="accordion-reader" data-toggle="collapse" data-target="#collapse-01">
-                                <h3>100 Fluid Responsive - Fits any device perfetly</h3>
+                                <h3>Why should I invest in a landing page?</h3>
                             </div>
                             <div class="collapse show" id="collapse-01" data-parent="#accordion">
                                 <div class="accordion-body ">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis dolor quas praesentium quisquam, nihil, reprehenderit dignissimos provident nisi accusamus possimus illo ipsum ratione porro, sunt nesciunt minima soluta
-                                        impedit temporibus?
-                                    </p>
+                                    <p>Your company is like a person, it needs your own identity that makes you unique and people need to know in a digital way that your business exists. In addition, it is a great way to gain new customers, as it adds value
+                                        to your brand, facilitates communication and gains public and visibility.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <div class="accordion-reader collapsed" data-toggle="collapse" data-target="#collapse-02">
-                                <h3>Clean Code</h3>
+                                <h3>How do I hire your services?</h3>
                             </div>
                             <div class="collapse" id="collapse-02" data-parent="#accordion">
                                 <div class="accordion-body ">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis dolor quas praesentium quisquam, nihil, reprehenderit dignissimos provident nisi accusamus possimus illo ipsum ratione porro, sunt nesciunt minima soluta
-                                        impedit temporibus?
-                                    </p>
+                                    <p>The first step is for you to contact me and explain what you need for your business and we will arrange an online meeting. After I had important information that helped me not only to carry out your project, but also
+                                        to arrive at an ideal budget for you.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <div class="accordion-reader collapsed" data-toggle="collapse" data-target="#collapse-03">
-                                <h3>Flat, Modern and Clean Design</h3>
+                                <h3>How to make the payment?</h3>
                             </div>
                             <div class="collapse" id="collapse-03" data-parent="#accordion">
                                 <div class="accordion-body ">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis dolor quas praesentium quisquam, nihil, reprehenderit dignissimos provident nisi accusamus possimus illo ipsum ratione porro, sunt nesciunt minima soluta
-                                        impedit temporibus?
-                                    </p>
+                                    <p>Payment can be made via bank transfer. It is 50% in advance and the rest in the presentation of the project.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <div class="accordion-reader collapsed" data-toggle="collapse" data-target="#collapse-04">
-                                <h3>Custom Font Support</h3>
+                                <h3>What is the average time for project delivery?</h3>
                             </div>
                             <div class="collapse" id="collapse-04" data-parent="#accordion">
                                 <div class="accordion-body ">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis dolor quas praesentium quisquam, nihil, reprehenderit dignissimos provident nisi accusamus possimus illo ipsum ratione porro, sunt nesciunt minima soluta
-                                        impedit temporibus?
-                                    </p>
+                                    <p>The project is presented only when I am sure it is finished and represents all the values that the brand needs to convey. The deadline is given along with the budget, and may vary according to its complexity.</p>
                                 </div>
                             </div>
                         </div>
@@ -555,77 +417,78 @@
     </section>
     <!--Faq Section end-->
     <!--Contact Section start-->
-    <section class="contact section-padding" data-scroll-index="6">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
+    <section class="contact section-padding" data-scroll-index="6" id="contact ">
+        <div class="container ">
+            <div class="row justify-content-center ">
+                <div class="col-lg-8 ">
+                    <div class="section-title ">
                         <h2>get in <span>touch</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact-info-item">
-                        <h3>For Any Queries and Support</h3>
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 ">
+                    <div class="contact-info-item ">
+                        <h3>Let's talk</h3>
+                        <p class="text-content-justify ">I am most interested in freelancing opportunities, preferably large projects. Place an order and let's chat, don't hesitate to message me and I'll respond shortly.</p>
                         <br>
-                        <div class="contact-info-item">
-                            <i class="fas fa-location-arrow"></i>
+                        <div class="contact-info-item ">
+                            <i class="fas fa-location-arrow "></i>
                             <h4>Company Location</h4>
-                            <p>22-b wallstreet, New Work</p>
+                            <p>Jaú, Brazil</p>
                         </div>
-                        <div class="contact-info-item">
-                            <i class="fas fa-envelope"></i>
-                            <h4>Write to us at</h4>
+                        <div class="contact-info-item ">
+                            <i class="fas fa-envelope "></i>
+                            <h4>Write to me at</h4>
                             <p>ferrerrobertdev@outlook.com</p>
                         </div>
-                        <div class="contact-info-item">
-                            <i class="fas fa-phone"></i>
-                            <h4>Call us on</h4>
+                        <div class="contact-info-item ">
+                            <i class="fas fa-phone "></i>
+                            <h4>Call me on</h4>
                             <p>+1 315 889 1023</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact-form">
+                <div class="col-lg-6 col-md-6 ">
+                    <div class="contact-form ">
                         <form>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Name" class="form-control">
+                            <div class="row ">
+                                <div class="col-lg-12 ">
+                                    <div class="form-group ">
+                                        <input type="text " placeholder="Your Name " class="form-control ">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Phone" class="form-control">
+                            <div class="row ">
+                                <div class="col-lg-6 ">
+                                    <div class="form-group ">
+                                        <input type="text " placeholder="Your Phone " class="form-control ">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Email" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Subject" class="form-control">
+                                <div class="col-lg-6 ">
+                                    <div class="form-group ">
+                                        <input type="text " placeholder="Your Email " class="form-control ">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea placeholder="Your Message" class="form-control"></textarea>
+                            <div class="row ">
+                                <div class="col-lg-12 ">
+                                    <div class="form-group ">
+                                        <input type="text " placeholder="Subject " class="form-control ">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-2">Send Message</button>
+                            <div class="row ">
+                                <div class="col-lg-12 ">
+                                    <div class="form-group ">
+                                        <textarea placeholder="Your Message " class="form-control "></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-12 ">
+                                    <div class="form-group ">
+                                        <button type="submit " class="btn btn-2 ">Send Message</button>
                                     </div>
                                 </div>
                             </div>
@@ -637,88 +500,72 @@
     </section>
     <!--Contact Section end-->
     <!--Footer start-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row" ?>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col">
-                        <h3>About us</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam cumque veniam illum quidem neque!</p>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row " ?>
+                <div class="col-lg-6 col-md-6 ">
+                    <div class="footer-col ">
+                        <h3>About Me</h3>
+                        <p class="text-justify">I'm a brazilian developer, creator of the Ferrer Systems agency. I develop websites, digital markiting and also work as a freelancer. All in the best possible way for projects to establish emotional connections between brand and
+                            consumer.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col">
-                        <h3>Company</h3>
-                        <ul>
-                            <li>
-                                <a href="#">privacy policy</a>
-                            </li>
-                            <li>
-                                <a href="#">terms & condition</a>
-                            </li>
-                            <li>
-                                <a href="#">lates blogs</a>
-                            </li>
-                            <li>
-                                <a href="#">app services</a>
-                            </li>
-                        </ul>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="footer-info footer-col ">
+                        <h5 class="text-white ">Instagram</h5>
+                        <p class="text-white ">Follow me on</p>
+                        <figure class="flex-row ">
+                            <a href="https://www.instagram.com/ferrerrobertdev/ "> <img alt="robert ferrer instagram " class="img-footer " src="img/w1.jpg "></a>
+                        </figure>
+                        <figure class="flex-row ">
+                            <a href="https://www.instagram.com/ferrerrobertdev/ "> <img alt="robert ferrer instagram " class="img-footer " src="img/w2.jpg "></a>
+                        </figure>
+                        <figure class="flex-row ">
+                            <a href="https://www.instagram.com/ferrerrobertdev/ "> <img alt="robert ferrer instagram " class="img-footer " src="img/w3.jpg "></a>
+                        </figure>
+                        <figure class="flex-row ">
+                            <a href="https://www.instagram.com/ferrerrobertdev/ "> <img alt="robert ferrer instagram " class="img-footer " src="img/w4.jpg "></a>
+                        </figure>
+                        <figure class="flex-row ">
+                            <a href="https://www.instagram.com/ferrerrobertdev/ "> <img alt="robert ferrer instagram " class="img-footer " src="img/W5.jpg "></a>
+                        </figure>
+                        <figure class="flex-row ">
+                            <a href="https://www.instagram.com/ferrerrobertdev/ "> <img alt="robert ferrer instagram " class="img-footer " src="img/W6.jpg "></a>
+                        </figure>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col">
-                        <h3>Quick link</h3>
-                        <ul>
-                            <li>
-                                <a href="#home">home</a>
-                            </li>
-                            <li>
-                                <a href="#features">features</a>
-                            </li>
-                            <li>
-                                <a href="#screenshots">screenshots</a>
-                            </li>
-                            <li>
-                                <a href="#pricing">pricing</a>
-                            </li>
-                            <li>
-                                <a href="#testimonials">testimonials</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col">
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="footer-col ">
                         <h3>Social Pages</h3>
                         <ul>
                             <li>
-                                <a href="#">facebook</a>
+                                <a href="https://www.linkedin.com/in/robertferrerdev/ ">Linkedin</a>
                             </li>
                             <li>
-                                <a href="#">twitter</a>
+                                <a href="https://github.com/RobertFerrer ">github</a>
                             </li>
                             <li>
-                                <a href="#">instagram</a>
+                                <a href="https://www.instagram.com/ferrerrobertdev/ ">instagram</a>
                             </li>
                             <li>
-                                <a href="#">linkedin</a>
+                                <a href="mailto:robertferrerdev@outlook.com ">e-mail</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright-text">&copy; Copyright 2022 All rights reserved by <strong>Robert Ferrer</strong></p>
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <p class="copyright-text ">&copy; Copyright 2022 All rights reserved by <strong>Robert Ferrer</strong></p>
                 </div>
             </div>
         </div>
     </footer>
     <!--Footer end-->
-
     <!--toggle theme light and dark Start-->
     <div class="toggle-theme">
-        <i class="fas fa-moon"></i>
+        <a href="mailto:robertferrerdev@outlook.com"><i class="fas fa-envelope"></i></a>
     </div>
     <!--toggle theme light and dark end-->
     <!--Video Popup Start-->
@@ -732,39 +579,8 @@
     </div>
     <!--Video Popup end-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!--text home-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js "></script>
     <!-- jquery js -->
     <script src="js/jquery.min.js"></script>
     <!-- popper js -->

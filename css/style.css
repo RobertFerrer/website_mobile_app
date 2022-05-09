@@ -14,6 +14,7 @@ Global
         --color-2: #42b6ec;
         --color-3: #01303F;
         --bg-dark: #212529;
+        --menu-color: #000000;
         --main-to-dark-color: var(--main-color);
         --main-to-dark-color: var(--bg-dark);
         --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -60,6 +61,9 @@ Global
     ul {
         list-style: none;
     }
+    /*---------------------
+Buttons
+---------------------*/
     
     .btn-1 {
         background-color: #ffffff;
@@ -87,9 +91,10 @@ Global
         background-color: #ffffff;
         padding: 12px 30px;
         border: none;
-        border-radius: 30px;
+        border-radius: 50px;
         color: var(--main-color);
         font-size: 16px;
+        margin-left: 10px;
         text-transform: capitalize;
         transition: all 0.5s ease;
         box-shadow: var(--shadow-black-300);
@@ -148,7 +153,32 @@ Global
             opacity: 0;
         }
     }
-    /*--scrollbar--*/
+    
+    .btn-2 {
+        background-color: var(--main-color);
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: capitalize;
+        transition: all 0.5s ease;
+        box-shadow: var(--shadow-black-100);
+        font-weight: 500;
+    }
+    
+    .btn-2:focus {
+        box-shadow: var(--shadow-black-100);
+    }
+    
+    .btn-2:hover {
+        color: var(--black-000);
+        background-color: var(--color-1);
+        box-shadow: var(--shadow-black-300);
+    }
+    /*---------------------
+Scrollbar
+---------------------*/
     
      ::-webkit-scrollbar {
         width: 15px;
@@ -191,6 +221,9 @@ Global
         color: var(--color-3);
         animation: bounceTop_01 3s linear infinite;
     }
+    /*---------------------
+Title section
+---------------------*/
     
     .section-padding {
         padding: 80px 0;
@@ -242,7 +275,7 @@ preloader
         height: 100%;
         width: 100%;
         z-index: 2100;
-        background-color: var(--main-color);
+        background-color: var(--color-3);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -261,9 +294,25 @@ Navbar
 ---------------------*/
     
     .navbar {
-        background-color: transparent;
-        padding: 20px 0;
-        transition: all 0.5s ease;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        background: #000000;
+    }
+    
+    .navbar-brand {
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 15px;
+        padding: 0px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
     
     .navbar .logo {
@@ -273,100 +322,25 @@ Navbar
         padding-bottom: 5px;
     }
     
-    .navbar.navbar-shrink {
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        background-color: var(--main-color);
+    .social-links a {
+        width: 24px;
+        height: 24px;
+        background-color: var(--menu-color);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        font-size: 18px;
+        margin-left: 5px;
     }
     
-    .navbar .container {
-        padding: 0 15px;
-    }
-    
-    .navbar .navbar-brand {
-        font-size: 30px;
-        color: #ffffff;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-    
-    .navbar .nav-item {
-        margin-left: 40px;
-    }
-    
-    .navbar .nav-item .nav-link {
-        color: #ffffff;
-        text-transform: capitalize;
-        font-size: 16px;
-        font-weight: 400;
-        padding: 5px 0;
-        position: relative;
-    }
-    
-    .navbar .nav-item .nav-link::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 1px;
-        background-color: #ffffff;
-        background: all 0.5s ease;
-        transform: scale(0);
-    }
-    
-    .navbar .nav-item .nav-link.active::before,
-    .navbar .nav-item .nav-link:hover::before {
-        transform: scale(1);
+    .link-alt {
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
     /*---------------------
-Home
+home
 ---------------------*/
-    
-    .home {
-        min-height: 100vh;
-        padding: 150px 0;
-        background: rgb(2, 0, 36);
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0.6) 0%, rgba(9, 9, 121, 0.6) 35%, rgba(0, 212, 255, 0.6) 100%);
-        border-radius: 0 0 200px 0;
-        overflow-x: hidden;
-    }
-    
-    .home-text h1 {
-        font-size: 45px;
-        font-weight: 700;
-        color: #ffffff;
-        margin: 0 0 20px;
-    }
-    
-    .home-text p {
-        font-size: 18px;
-        line-height: 28px;
-        color: #ffffff;
-        margin: 0;
-        font-weight: 300;
-    }
-    
-    .home .home-btn {
-        margin-top: 40px;
-    }
-    
-    .home .home-btn .video-play-btn {
-        margin-left: 30px;
-        height: 50px;
-        width: 50px;
-        padding: 0;
-        font-size: 16px;
-        animation: pulse_01 2s ease infinite;
-    }
-    
-    .home .home-btn .video-play-btn:hover {
-        animation: none;
-        box-shadow: var(--shadow-black-300);
-    }
-    
-    .home .home-btn .video-play-btn i {
-        line-height: 50px;
-    }
     
     .home-img img {
         max-width: 250px;
@@ -403,6 +377,47 @@ Home
         left: 30px;
         transform-origin: 170px 170px;
         animation: spin_01 10s linear infinite;
+    }
+    
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.01)), url(../img/cover.jpg);
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero h2 {
+        font-size: 45px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #6c757d;
+    }
+    
+    .hero h5 {
+        font-size: 38px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    
+    .hero p {
+        font-size: 22px;
+        margin: 14px auto 34px auto;
+    }
+    
+    .hero-text-white {
+        color: #ffffff;
+    }
+    
+    #hero .typing {
+        color: #6c757d;
+        font-size: 40px;
+    }
+    
+    .text-project {
+        font-size: 33px;
     }
     /*---------------------
 video popup
@@ -464,7 +479,22 @@ video popup
         border: 0;
     }
     /*---------------------
-Features Section
+about me Section
+---------------------*/
+    
+    #about img {
+        border-radius: 16px;
+    }
+    
+    .text-about {
+        font-size: 22px;
+    }
+    
+    .text-about2 {
+        font-size: 32px;
+    }
+    /*---------------------
+services Section
 ---------------------*/
     
     .features .feature-item {
@@ -515,8 +545,8 @@ Features Section
     }
     
     .features .feature-item .icon {
-        height: 60px;
-        width: 60px;
+        height: 57px;
+        width: 57px;
         margin: 0 auto 30px;
         text-align: center;
         font-size: 40px;
@@ -570,77 +600,12 @@ Features Section
         margin: 0 0 15px;
     }
     /*---------------------
-Fun facts section
+Portfolio section
 ---------------------*/
     
-    .fun-facts {
-        background-color: var(--black-100);
-    }
-    
-    .fun-facts .section-title {
-        margin-bottom: 20px;
-    }
-    
-    .fun-facts .section-title h2 {
-        text-align: left;
-    }
-    
-    .fun-facts-img img {
-        max-width: 250px;
-        width: 100%;
-        box-shadow: var(--shadow-black-100);
-        animation: bounceTop_01 3s ease infinite;
-    }
-    
-    .fun-facts-text p {
-        font-size: 16px;
-        line-height: 26px;
-        color: var(--black-400);
-        margin: 0 0 15px;
-        font-weight: 300;
-    }
-    
-    .fun-facts-item {
-        padding: 30px;
-        text-align: center;
-        box-shadow: var(--shadow-black-100);
-        border-radius: 10px;
-        margin-top: 30px;
-    }
-    
-    .fun-facts-item h3 {
-        font-size: 40px;
-        font-weight: 500;
-        color: #ffffff;
-        margin: 0 5px;
-    }
-    
-    .fun-facts-item span {
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 300;
-        margin: 0;
-        line-height: 26px;
-    }
-    
-    .fun-facts-item.style-1 {
-        background-color: var(--color-1);
-    }
-    
-    .fun-facts-item.style-2 {
-        background-color: var(--color-2);
-    }
-    
-    .fun-facts-item.style-3 {
+    .app-screenshots {
         background-color: var(--color-3);
     }
-    
-    .fun-facts-item.style-4 {
-        background-color: var(--main-color);
-    }
-    /*---------------------
-screenshot section
----------------------*/
     
     .screenshot-item {
         margin: 15px;
@@ -652,8 +617,12 @@ screenshot section
         display: block;
         margin: auto;
     }
+    
+    .portfolio-item {
+        margin: 30px 10px -30px 10px;
+    }
     /*---------------------
-Download App section
+Hire Me section
 ---------------------*/
     
     .app-download {
@@ -710,30 +679,8 @@ Download App section
         margin: 0 0 30px;
         line-height: 26px;
     }
-    
-    .btn-2 {
-        background-color: var(--main-color);
-        padding: 12px 30px;
-        border: none;
-        border-radius: 4px;
-        color: #ffffff;
-        font-size: 16px;
-        text-transform: capitalize;
-        transition: all 0.5s ease;
-        box-shadow: var(--shadow-black-100);
-        font-weight: 500;
-    }
-    
-    .btn-2:focus {
-        box-shadow: var(--shadow-black-100);
-    }
-    
-    .btn-2:hover {
-        color: var(--main-color);
-        background-color: #ffffff;
-    }
     /*---------------------
-testimonials Section
+Social Section
 ---------------------*/
     
     .testimonials {
@@ -808,126 +755,45 @@ testimonials Section
     .testimonials-item .rating i {
         display: inline-block;
         font-size: 16px;
-        color: var(--color-2);
-    }
-    /*---------------------
-Pricing Section
----------------------*/
-    
-    .pricing-card {
-        margin: 15px;
-        padding: 30px;
-        box-shadow: var(--shadow-black-100);
-        border-radius: 10px;
-        text-align: center;
-    }
-    
-    .pricing-plan {
-        border-radius: 10px;
-    }
-    
-    .pricing-plan .pricing-header {
-        padding: 20px 30px;
-        border-bottom: 1px solid var(--black-alpha-100);
-    }
-    
-    .pricing-plan .pricing-header h3 {
-        text-align: center;
-        font-size: 30px;
-        color: var(--black-900);
-        font-weight: 500;
-        text-transform: capitalize;
-        margin: 0;
-    }
-    
-    .pricing-plan .pricing-price {
-        padding: 40px 30px;
-        display: flex;
-        justify-content: center;
-        line-height: 0.7;
-    }
-    
-    .pricing-plan .pricing-price .currency {
-        font-size: 16px;
-        font-weight: 300;
-        color: var(--black-400);
-        margin-right: 5px;
-        align-self: flex-start;
-    }
-    
-    .pricing-plan .pricing-price .price {
-        font-size: 80px;
-        font-weight: 700;
         color: var(--main-color);
     }
+    /* insta posts */
     
-    .pricing-plan .pricing-price .period {
-        font-size: 14px;
-        font-weight: 300;
-        color: var(--black-400);
-        margin-right: 5px;
-        align-self: flex-end;
-        text-transform: uppercase;
-    }
-    
-    .pricing-plan .pricing-body {
-        padding: 0 30px;
-    }
-    
-    .pricing-plan .pricing-body ul li {
-        font-size: 16px;
-        font-weight: 300;
-        color: var(--black-400);
-        padding: 10px 0 10px 30px;
-        border-bottom: 1px solid var(--black-100);
-        line-height: 26px;
+    #insta-posts {
         position: relative;
+        border: 32px;
     }
     
-    .pricing-plan .pricing-body ul li :last-child {
-        border-bottom: none;
-    }
-    
-    .pricing-plan .pricing-body ul li i {
-        color: var(--main-color);
-        position: absolute;
-        left: 0;
-        top: 12px;
-    }
-    
-    .pricing-plan .pricing-footer {
-        padding: 20px 30px 30px;
-        text-align: center;
-    }
-    /*---------------------
-Team Section
----------------------*/
-    
-    .team {
-        background-color: (--black-100);
-    }
-    
-    .team-item {
-        margin: 15px;
-        padding: 30px;
+    .insta-follow {
+        width: 90px;
+        height: 90px;
+        background-color: var(--color-3);
+        color: var(--black-000);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 44px;
         border-radius: 24px;
-        box-shadow: var(--shadow-black-100);
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.5s ease;
     }
     
-    .team-item h3 {
-        font-size: 18px;
-        color: var(--main-color);
-        font-weight: 500;
-        margin: 15px 0 5px;
-        text-transform: capitalize;
+    .insta-follow:hover {
+        background-color: var(--black-000);
+        transition: all 0.5s ease;
     }
     
-    .team-item span {
-        display: block;
-        font-size: 16px;
-        font-weight: 300;
-        color: var(--black-400);
-        text-transform: capitalize;
+    #insta-posts:hover .insta-follow {
+        opacity: 1;
+        top: 50%;
+    }
+    
+    .img-networks {
+        border-radius: 20px;
     }
     /*---------------------
 Faq Section
@@ -1071,7 +937,7 @@ Contact Section
         border-color: var(--main-color);
     }
     /*---------------------
-Contact Section
+Footer Section
 ---------------------*/
     
     .footer {
@@ -1117,6 +983,10 @@ Contact Section
         padding-left: 5px;
     }
     
+    .footer-col .alt-text {
+        margin: 6px;
+    }
+    
     .footer .copyright-text {
         padding: 20px 0;
         text-align: center;
@@ -1124,30 +994,56 @@ Contact Section
         color: rgba(255, 255, 255, 0.9);
         font-weight: 300;
         margin: 50px 0 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .footer-bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .flex-row {
+        display: inline-block;
+        width: 25%;
+        height: 50%;
+        margin: .3rem .4rem;
+        margin-bottom: 10px;
+    }
+    
+    .img-footer {
+        border-radius: 12px;
     }
     /*------------------------------
-    toggle theme light and dark
-    ---------------------------*/
+button email
+---------------------------*/
     
     .toggle-theme {
         position: fixed;
-        right: 0;
-        top: calc(20% - 20px);
+        right: 5px;
+        top: calc(90% - 20px);
         height: 40px;
         width: 40px;
         background-color: var(--main-color);
         z-index: 1200;
-        color: #ffffff;
+        color: var(--black-000);
         cursor: pointer;
         border-radius: 50%;
         box-shadow: var(--shadow-black-300);
         font-size: 16px;
         text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .toggle-theme:hover {
+        transition: all 0.5s ease;
+        background-color: #0680a8;
     }
     
     .toggle-theme i {
         line-height: 40px;
+    }
+    
+    .toggle-theme a {
+        color: var(--black-000);
     }
     /*---------------------
 Responsive
@@ -1155,16 +1051,16 @@ Responsive
     
     @media(max-width: 991px) {
         .navbar {
-            background-color: var(--main-color);
+            background-color: var(--menu-color);
         }
         .navbar-toggler {
-            background-color: var(--main-color);
+            background-color: var(--menu-color);
             height: 34px;
             width: 44px;
             padding: 0;
-            border: 1px solid #ffffff;
+            border: 1px solid var(--black-400);
             font-size: 17px;
-            color: #ffffff;
+            color: var(--black-000);
         }
         .navbar .nav-item {
             margin: 0;
@@ -1172,7 +1068,7 @@ Responsive
         }
         .navbar.navbar-shrink .navbar-toggler,
         .navbar.navbar-shrink .navbar-nav {
-            background-color: var(--main-color);
+            background-color: var(--menu-color);
         }
         .home-img .circle {
             height: 320px;
